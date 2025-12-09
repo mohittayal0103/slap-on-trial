@@ -1,0 +1,580 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "OG Blue",
+      "image": "/assets/skins/og-blue.png",
+      "category": "Skin",
+      "basePrice": 1499,
+      "featured": false,
+      "variants": [
+        {
+          "modelId": "cdj-3000",
+          "price": 1499
+        },
+        {
+          "modelId": "ddj-flx4",
+          "price": 1299
+        },
+        {
+          "modelId": "xdj-xz",
+          "price": 2499
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "OG Black",
+      "image": "/assets/skins/og-black.png",
+      "category": "Skin",
+      "basePrice": 1499,
+      "featured": false,
+      "variants": [
+        {
+          "modelId": "cdj-3000",
+          "price": 1499
+        },
+        {
+          "modelId": "ddj-flx4",
+          "price": 1299
+        },
+        {
+          "modelId": "xdj-xz",
+          "price": 2499
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "OG White",
+      "image": "/assets/skins/og-white.png",
+      "category": "Skin",
+      "basePrice": 1499,
+      "featured": false,
+      "variants": [
+        {
+          "modelId": "cdj-3000",
+          "price": 1499
+        },
+        {
+          "modelId": "ddj-flx4",
+          "price": 1299
+        },
+        {
+          "modelId": "xdj-xz",
+          "price": 2499
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Matter",
+      "image": "/assets/skins/matter.png",
+      "category": "Skin",
+      "basePrice": 1999,
+      "featured": false,
+      "variants": [
+        {
+          "modelId": "cdj-3000",
+          "price": 1999
+        },
+        {
+          "modelId": "ddj-flx4",
+          "price": 1799
+        },
+        {
+          "modelId": "xdj-xz",
+          "price": 2999
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Aurora",
+      "image": "/assets/skins/aurora.png",
+      "category": "Skin",
+      "basePrice": 2499,
+      "featured": true,
+      "variants": [
+        {
+          "modelId": "cdj-3000",
+          "price": 2499
+        },
+        {
+          "modelId": "ddj-flx4",
+          "price": 2199
+        },
+        {
+          "modelId": "xdj-xz",
+          "price": 3499
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Voodoo Melon",
+      "image": "/assets/skins/voodoo-melon.pmg.png",
+      "category": "Skin",
+      "basePrice": 2499,
+      "featured": true,
+      "variants": [
+        {
+          "modelId": "cdj-3000",
+          "price": 2499
+        },
+        {
+          "modelId": "ddj-flx4",
+          "price": 2199
+        },
+        {
+          "modelId": "xdj-xz",
+          "price": 3499
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Sugar Floss",
+      "image": "/assets/skins/sugar-floss.png",
+      "category": "Skin",
+      "basePrice": 2499,
+      "featured": true,
+      "variants": [
+        {
+          "modelId": "cdj-3000",
+          "price": 2499
+        },
+        {
+          "modelId": "ddj-flx4",
+          "price": 2199
+        },
+        {
+          "modelId": "xdj-xz",
+          "price": 3499
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Solars",
+      "image": "/assets/skins/solars.png",
+      "category": "Skin",
+      "basePrice": 2499,
+      "featured": false,
+      "variants": [
+        {
+          "modelId": "cdj-3000",
+          "price": 2499
+        },
+        {
+          "modelId": "ddj-flx4",
+          "price": 2199
+        },
+        {
+          "modelId": "xdj-xz",
+          "price": 3499
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Blue",
+      "image": "/assets/skins/blue.png",
+      "category": "Skin",
+      "basePrice": 1499,
+      "featured": false,
+      "variants": []
+    },
+    {
+      "id": "10",
+      "name": "Butterscotch",
+      "image": "/assets/skins/butascotch.png",
+      "category": "Skin",
+      "basePrice": 1999,
+      "featured": false,
+      "variants": []
+    },
+    {
+      "id": "11",
+      "name": "Constellation",
+      "image": "/assets/skins/constellation.png",
+      "category": "Skin",
+      "basePrice": 1999,
+      "featured": false,
+      "variants": []
+    },
+    {
+      "id": "12",
+      "name": "Galactic",
+      "image": "/assets/skins/galactic.png",
+      "category": "Skin",
+      "basePrice": 1999,
+      "featured": false,
+      "variants": []
+    },
+    {
+      "id": "13",
+      "name": "Ice Berg",
+      "image": "/assets/skins/ice-berg.png",
+      "category": "Skin",
+      "basePrice": 1999,
+      "featured": false,
+      "variants": []
+    },
+    {
+      "id": "14",
+      "name": "Lumine",
+      "image": "/assets/skins/lumine.png",
+      "category": "Skin",
+      "basePrice": 1999,
+      "featured": false,
+      "variants": []
+    },
+    {
+      "id": "15",
+      "name": "Maniac",
+      "image": "/assets/skins/maniac.png",
+      "category": "Skin",
+      "basePrice": 1999,
+      "featured": false,
+      "variants": []
+    },
+    {
+      "id": "16",
+      "name": "Off White",
+      "image": "/assets/skins/off-white.png",
+      "category": "Skin",
+      "basePrice": 1499,
+      "featured": true,
+      "variants": []
+    },
+    {
+      "id": "17",
+      "name": "Olive",
+      "image": "/assets/skins/olive.png",
+      "category": "Skin",
+      "basePrice": 1499,
+      "featured": false,
+      "variants": []
+    },
+    {
+      "id": "18",
+      "name": "Pop Rocks",
+      "image": "/assets/skins/pop-rocks.png",
+      "category": "Skin",
+      "basePrice": 1999,
+      "featured": false,
+      "variants": []
+    },
+    {
+      "id": "19",
+      "name": "Prism",
+      "image": "/assets/skins/prism.png",
+      "category": "Skin",
+      "basePrice": 1999,
+      "featured": false,
+      "variants": []
+    },
+    {
+      "id": "20",
+      "name": "Pumpkin",
+      "image": "/assets/skins/pumpkin.png",
+      "category": "Skin",
+      "basePrice": 1499,
+      "featured": false,
+      "variants": []
+    },
+    {
+      "id": "21",
+      "name": "Red",
+      "image": "/assets/skins/red.png",
+      "category": "Skin",
+      "basePrice": 1499,
+      "featured": false,
+      "variants": []
+    },
+    {
+      "id": "22",
+      "name": "Retro",
+      "image": "/assets/skins/retro.png",
+      "category": "Skin",
+      "basePrice": 1999,
+      "featured": false,
+      "variants": []
+    },
+    {
+      "id": "23",
+      "name": "Splash",
+      "image": "/assets/skins/splash.png",
+      "category": "Skin",
+      "basePrice": 1999,
+      "featured": false,
+      "variants": []
+    },
+    {
+      "id": "24",
+      "name": "Strawberry Duet",
+      "image": "/assets/skins/strawberry-duet.png",
+      "category": "Skin",
+      "basePrice": 1999,
+      "featured": false,
+      "variants": []
+    },
+    {
+      "id": "25",
+      "name": "Sunergia",
+      "image": "/assets/skins/sunergia.png",
+      "category": "Skin",
+      "basePrice": 1999,
+      "featured": false,
+      "variants": []
+    },
+    {
+      "id": "26",
+      "name": "Waveform",
+      "image": "/assets/skins/waveform.png",
+      "category": "Skin",
+      "basePrice": 1999,
+      "featured": false,
+      "variants": []
+    }
+  ],
+  "orders": [
+    {
+      "id": "1765283238952",
+      "items": [
+        {
+          "id": "1",
+          "name": "OG Blue",
+          "image": "/assets/skins/og-blue.png",
+          "category": "Skin",
+          "basePrice": 1499,
+          "featured": false,
+          "variants": [
+            {
+              "modelId": "cdj-3000",
+              "price": 1499
+            },
+            {
+              "modelId": "ddj-flx4",
+              "price": 1299
+            },
+            {
+              "modelId": "xdj-xz",
+              "price": 2499
+            }
+          ],
+          "quantity": 1,
+          "options": {
+            "model": "DDJ-FLX4",
+            "modelId": "ddj-flx4",
+            "price": 1299
+          }
+        }
+      ],
+      "total": 1299,
+      "name": "Mohit ",
+      "email": "test@gamil.com",
+      "address": "dsahgkdja",
+      "phone": "7981263216",
+      "paymentMethod": "cod",
+      "status": "Placed",
+      "date": "2025-12-09T12:27:18.952Z",
+      "trackingLink": ""
+    },
+    {
+      "id": "1765283677998",
+      "items": [
+        {
+          "id": "6",
+          "name": "Voodoo Melon",
+          "image": "/assets/skins/voodoo-melon.pmg.png",
+          "category": "Skin",
+          "basePrice": 2499,
+          "featured": true,
+          "variants": [
+            {
+              "modelId": "cdj-3000",
+              "price": 2499
+            },
+            {
+              "modelId": "ddj-flx4",
+              "price": 2199
+            },
+            {
+              "modelId": "xdj-xz",
+              "price": 3499
+            }
+          ],
+          "quantity": 1,
+          "options": {
+            "model": "CDJ-3000",
+            "modelId": "cdj-3000",
+            "price": 2499
+          }
+        }
+      ],
+      "total": 2499,
+      "name": "adf",
+      "email": "sasda@gamil.com",
+      "address": "dasasd",
+      "phone": "sadsa",
+      "paymentMethod": "cod",
+      "status": "Placed",
+      "date": "2025-12-09T12:34:37.998Z",
+      "trackingLink": ""
+    }
+  ],
+  "master_data": {
+    "console_types": [
+      {
+        "id": "controller",
+        "name": "DJ Controller"
+      },
+      {
+        "id": "player",
+        "name": "CDJ / Media Player"
+      },
+      {
+        "id": "mixer",
+        "name": "DJ Mixer"
+      },
+      {
+        "id": "aio",
+        "name": "All-in-One System"
+      }
+    ],
+    "brands": [
+      {
+        "id": "pioneer",
+        "name": "Pioneer DJ"
+      },
+      {
+        "id": "denon",
+        "name": "Denon DJ"
+      },
+      {
+        "id": "numark",
+        "name": "Numark"
+      },
+      {
+        "id": "native_instruments",
+        "name": "Native Instruments"
+      },
+      {
+        "id": "roland",
+        "name": "Roland"
+      }
+    ],
+    "models": [
+      {
+        "id": "ddj-flx4",
+        "name": "DDJ-FLX4",
+        "brandId": "pioneer",
+        "typeId": "controller"
+      },
+      {
+        "id": "ddj-flx10",
+        "name": "DDJ-FLX10",
+        "brandId": "pioneer",
+        "typeId": "controller"
+      },
+      {
+        "id": "ddj-1000",
+        "name": "DDJ-1000/SRT",
+        "brandId": "pioneer",
+        "typeId": "controller"
+      },
+      {
+        "id": "ddj-800",
+        "name": "DDJ-800",
+        "brandId": "pioneer",
+        "typeId": "controller"
+      },
+      {
+        "id": "ddj-rev7",
+        "name": "DDJ-REV7",
+        "brandId": "pioneer",
+        "typeId": "controller"
+      },
+      {
+        "id": "cdj-3000",
+        "name": "CDJ-3000",
+        "brandId": "pioneer",
+        "typeId": "player"
+      },
+      {
+        "id": "cdj-2000nxs2",
+        "name": "CDJ-2000NXS2",
+        "brandId": "pioneer",
+        "typeId": "player"
+      },
+      {
+        "id": "djm-900nxs2",
+        "name": "DJM-900NXS2",
+        "brandId": "pioneer",
+        "typeId": "mixer"
+      },
+      {
+        "id": "djm-a9",
+        "name": "DJM-A9",
+        "brandId": "pioneer",
+        "typeId": "mixer"
+      },
+      {
+        "id": "xdj-xz",
+        "name": "XDJ-XZ",
+        "brandId": "pioneer",
+        "typeId": "aio"
+      },
+      {
+        "id": "xdj-rx3",
+        "name": "XDJ-RX3",
+        "brandId": "pioneer",
+        "typeId": "aio"
+      },
+      {
+        "id": "prime-4",
+        "name": "Prime 4+",
+        "brandId": "denon",
+        "typeId": "aio"
+      },
+      {
+        "id": "sc6000",
+        "name": "SC6000 Prime",
+        "brandId": "denon",
+        "typeId": "player"
+      },
+      {
+        "id": "x1850",
+        "name": "X1850 Prime",
+        "brandId": "denon",
+        "typeId": "mixer"
+      },
+      {
+        "id": "mixtrack-pro-fx",
+        "name": "Mixtrack Pro FX",
+        "brandId": "numark",
+        "typeId": "controller"
+      },
+      {
+        "id": "mixstream-pro",
+        "name": "Mixstream Pro+",
+        "brandId": "numark",
+        "typeId": "aio"
+      },
+      {
+        "id": "s4-mk3",
+        "name": "Traktor Kontrol S4 Mk3",
+        "brandId": "native_instruments",
+        "typeId": "controller"
+      }
+    ]
+  },
+  "admins": [
+    {
+      "username": "admin",
+      "password": "password123"
+    }
+  ]
+}
