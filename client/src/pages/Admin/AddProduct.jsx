@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import API_URL from '../../config';
 import { useToast } from '../../context/ToastContext';
 
 const AddProduct = () => {
@@ -24,7 +25,7 @@ const AddProduct = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('/api/products', formData);
+            await axios.post(`${API_URL}/products`, formData);
             showToast('Product Added Successfully!', "success");
             navigate('/admin/dashboard');
         } catch (err) {

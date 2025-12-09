@@ -4,6 +4,7 @@ import { useShop } from '../../context/ShopContext';
 import { useToast } from '../../context/ToastContext';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import API_URL from '../../config';
 
 const Checkout = () => {
     const { cart, setCart } = useShop();
@@ -33,7 +34,7 @@ const Checkout = () => {
         };
 
         try {
-            const res = await axios.post('/api/orders', orderData);
+            const res = await axios.post(`${API_URL}/orders`, orderData);
             if (res.data.success) {
                 showToast("Order Placed Successfully!", "success");
 

@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import API_URL from '../../config';
 
 const AdminLogin = () => {
     const [username, setUsername] = useState('');
@@ -12,7 +13,7 @@ const AdminLogin = () => {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('/api/admin/login', { username, password });
+            const res = await axios.post(`${API_URL}/admin/login`, { username, password });
             if (res.data.success) {
                 // In a real app, store token. For now, simple redirect.
                 localStorage.setItem('adminToken', res.data.token);

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
 import { useToast } from '../../context/ToastContext';
+import API_URL from '../../config';
 
 const Dashboard = () => {
     const [orders, setOrders] = useState([]);
@@ -14,7 +14,7 @@ const Dashboard = () => {
 
     const fetchOrders = async () => {
         try {
-            const res = await axios.get('/api/orders');
+            const res = await axios.get(`${API_URL}/orders`);
             setOrders(res.data);
             setLoading(false);
         } catch (err) {
@@ -25,7 +25,7 @@ const Dashboard = () => {
 
     const updateStatus = async (orderId, newStatus) => {
         try {
-            await axios.post('/api/orders/update-status', { orderId, status: newStatus });
+            await axios.post(`${API_URL}/orders/update-status`, { orderId, status: newStatus });
             fetchOrders();
             showToast(`Order status updated to ${newStatus}`, "success");
         } catch (err) {
@@ -37,7 +37,7 @@ const Dashboard = () => {
         const link = prompt("Enter Tracking Link:");
         if (link) {
             try {
-                await axios.post('/api/orders/update-status', { orderId, status: 'Shipped', trackingLink: link });
+                await axios.post(`${API_URL}/orders/update-status`, { orderId, status: 'Shipped', trackingLink: link });
                 fetchOrders();
                 showToast("Order shipped & tracking added!", "success");
             } catch (err) {

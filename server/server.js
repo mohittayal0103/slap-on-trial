@@ -8,7 +8,7 @@ import fs from 'fs';
 
 // Initialize App
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 5001;
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // Middleware
@@ -43,7 +43,7 @@ const writeDB = (data) => fs.writeFileSync(DB_FILE, JSON.stringify(data, null, 2
 app.use(express.static(join(__dirname, '../client/dist')));
 
 // Serve upload assets
-app.use(express.static(join(__dirname, '../public'))); 
+app.use(express.static(join(__dirname, '../public')));
 
 // --- API ROUTES ---
 
@@ -52,7 +52,7 @@ app.post('/api/admin/login', (req, res) => {
   const { username, password } = req.body;
   const db = readDB();
   const admin = db.admins.find(a => a.username === username && a.password === password);
-  
+
   if (admin) {
     res.json({ success: true, token: "dummy-token-123" });
   } else {
@@ -81,25 +81,25 @@ app.get('/api/master-data', (req, res) => {
 });
 
 app.post('/api/master-data/update', (req, res) => {
-   // Generic endpoint to update master data lists (for admin usage)
-   const { type, item } = req.body; // type: 'console_types' | 'brands' | 'models'
-   const db = readDB();
-   if (db.master_data[type]) {
-       db.master_data[type].push(item);
-       writeDB(db);
-       res.json({ success: true, data: db.master_data[type] });
-   } else {
-       res.status(400).json({ error: "Invalid type" });
-   }
+  // Generic endpoint to update master data lists (for admin usage)
+  const { type, item } = req.body; // type: 'console_types' | 'brands' | 'models'
+  const db = readDB();
+  if (db.master_data[type]) {
+    db.master_data[type].push(item);
+    writeDB(db);
+    res.json({ success: true, data: db.master_data[type] });
+  } else {
+    res.status(400).json({ error: "Invalid type" });
+  }
 });
 
 // 4. Orders
 app.post('/api/orders', (req, res) => {
   const db = readDB();
-  const newOrder = { 
-    id: Date.now().toString(), 
-    ...req.body, 
-    status: 'Placed', 
+  const newOrder = {
+    id: Date.now().toString(),
+    ...req.body,
+    status: 'Placed',
     date: new Date().toISOString(),
     trackingLink: ''
   };
@@ -118,7 +118,7 @@ app.post('/api/orders/update-status', (req, res) => {
   const { orderId, status, trackingLink } = req.body;
   const db = readDB();
   const orderIndex = db.orders.findIndex(o => o.id === orderId);
-  
+
   if (orderIndex > -1) {
     db.orders[orderIndex].status = status;
     if (trackingLink) db.orders[orderIndex].trackingLink = trackingLink;

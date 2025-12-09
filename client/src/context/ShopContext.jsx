@@ -1,6 +1,6 @@
-
 import React, { createContext, useState, useContext, useEffect } from 'react';
 import axios from 'axios';
+import API_URL from '../config';
 
 const ShopContext = createContext();
 
@@ -28,7 +28,7 @@ export const ShopProvider = ({ children }) => {
     const fetchProducts = async () => {
         try {
             setLoading(true);
-            const res = await axios.get('/api/products');
+            const res = await axios.get(`${API_URL}/products`);
             setProducts(res.data);
         } catch (err) {
             console.error("Error fetching products:", err);
@@ -39,7 +39,7 @@ export const ShopProvider = ({ children }) => {
 
     const fetchMasterData = async () => {
         try {
-            const res = await axios.get('/api/master-data');
+            const res = await axios.get(`${API_URL}/master-data`);
             setMasterData(res.data);
         } catch (err) {
             console.error("Error fetching master data:", err);
