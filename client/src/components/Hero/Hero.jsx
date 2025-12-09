@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import heroImage from '../../assets/images/hero.png';
 
@@ -71,9 +72,9 @@ const Hero = () => {
                         Shipping Worldwide From India.
                     </p>
                     <div className="flex flex-col md:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="/shop" className="bg-neon-teal text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-white transition-all shadow-[0_0_20px_rgba(0,240,255,0.5)] hover:scale-105 inline-block">
+                        <Link to="/shop" className="bg-neon-teal text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-white transition-all shadow-[0_0_20px_rgba(0,240,255,0.5)] hover:scale-105 inline-block">
                             Shop Now
-                        </a>
+                        </Link>
                     </div>
                 </motion.div>
 
